@@ -1,1 +1,7 @@
-on: push
+name: Educational Github Action
+on: [push]
+jobs:
+	first_job:
+		runs-on: ubuntu:latest
+		steps:
+			- uses: actions/checkout@v4
