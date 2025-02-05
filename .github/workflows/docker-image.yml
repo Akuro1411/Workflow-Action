@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run:  docker build -t extended-hello-alpine ./doc
+      - run:  docker build -f doc/Dockerfile -t doc-image:latest .
